@@ -1,3 +1,5 @@
+[![Xcode - Build and Analyze](https://github.com/haojunsui/CovTrace/actions/workflows/xcode-build-all.yml/badge.svg)](https://github.com/haojunsui/CovTrace/actions/workflows/xcode-build-all.yml)
+
 # CovTrace
 
 **CovTrace turns real app execution into linker order files — so your iOS/macOS app launches faster.**
