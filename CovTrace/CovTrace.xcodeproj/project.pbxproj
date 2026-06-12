@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5CF5A8E2FDB993900A0495F /* CoreSymbolicationDT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CF5A822FDB95E000A0495F /* CoreSymbolicationDT.framework */; };
+		C5CF5A8F2FDB993900A0495F /* CoreSymbolicationDT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5CF5A822FDB95E000A0495F /* CoreSymbolicationDT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5CF5A8B2FDB980D00A0495F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5CF5A292FDA532200A0495F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5CF5A812FDB95E000A0495F;
+			remoteInfo = CoreSymbolicationDT;
+		};
+		C5CF5A902FDB993900A0495F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5CF5A292FDA532200A0495F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5CF5A812FDB95E000A0495F;
+			remoteInfo = CoreSymbolicationDT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5CF5A602FDB926600A0495F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C5CF5A922FDB993900A0495F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C5CF5A8F2FDB993900A0495F /* CoreSymbolicationDT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C5CF5A562FDA550900A0495F /* libCovTrace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCovTrace.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CF5A622FDB926600A0495F /* covtracesymbolicator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = covtracesymbolicator; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CF5A822FDB95E000A0495F /* CoreSymbolicationDT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreSymbolicationDT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C5CF5A5B2FDA555B00A0495F /* Exceptions for "CoverageSanitizer" folder in "CovTrace" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				coveragesanitizer.c,
+			);
+			target = C5CF5A552FDA550900A0495F /* CovTrace */;
+		};
+		C5CF5A6A2FDB927100A0495F /* Exceptions for "Symbolicator" folder in "covtracesymbolicator" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.m,
+				symbolicator.m,
+			);
+			target = C5CF5A612FDB926600A0495F /* covtracesymbolicator */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C5CF5A3A2FDA536A00A0495F /* CoverageSanitizer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C5CF5A5B2FDA555B00A0495F /* Exceptions for "CoverageSanitizer" folder in "CovTrace" target */,
+			);
+			name = CoverageSanitizer;
+			path = CovTrace/CoverageSanitizer;
+			sourceTree = "<group>";
+		};
+		C5CF5A3D2FDA543B00A0495F /* OrderFileAnalyzer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = OrderFileAnalyzer;
+			path = CovTrace/OrderFileAnalyzer;
+			sourceTree = "<group>";
+		};
+		C5CF5A4A2FDA545700A0495F /* Symbolicator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C5CF5A6A2FDB927100A0495F /* Exceptions for "Symbolicator" folder in "covtracesymbolicator" target */,
+			);
+			name = Symbolicator;
+			path = CovTrace/Symbolicator;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5CF5A542FDA550900A0495F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5CF5A5F2FDB926600A0495F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5CF5A8E2FDB993900A0495F /* CoreSymbolicationDT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5CF5A282FDA532200A0495F = {
+			isa = PBXGroup;
+			children = (
+				C5CF5A3A2FDA536A00A0495F /* CoverageSanitizer */,
+				C5CF5A4A2FDA545700A0495F /* Symbolicator */,
+				C5CF5A3D2FDA543B00A0495F /* OrderFileAnalyzer */,
+				C5CF5A322FDA532200A0495F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5CF5A322FDA532200A0495F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5CF5A562FDA550900A0495F /* libCovTrace.a */,
+				C5CF5A622FDB926600A0495F /* covtracesymbolicator */,
+				C5CF5A822FDB95E000A0495F /* CoreSymbolicationDT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5CF5A522FDA550900A0495F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C5CF5A552FDA550900A0495F /* CovTrace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5CF5A572FDA550900A0495F /* Build configuration list for PBXNativeTarget "CovTrace" */;
+			buildPhases = (
+				C5CF5A522FDA550900A0495F /* Headers */,
+				C5CF5A532FDA550900A0495F /* Sources */,
+				C5CF5A542FDA550900A0495F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CovTrace;
+			packageProductDependencies = (
+			);
+			productName = libcovtrace;
+			productReference = C5CF5A562FDA550900A0495F /* libCovTrace.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C5CF5A612FDB926600A0495F /* covtracesymbolicator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5CF5A662FDB926600A0495F /* Build configuration list for PBXNativeTarget "covtracesymbolicator" */;
+			buildPhases = (
+				C5CF5A5E2FDB926600A0495F /* Sources */,
+				C5CF5A5F2FDB926600A0495F /* Frameworks */,
+				C5CF5A602FDB926600A0495F /* CopyFiles */,
+				C5CF5A922FDB993900A0495F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5CF5A8C2FDB980D00A0495F /* PBXTargetDependency */,
+				C5CF5A912FDB993900A0495F /* PBXTargetDependency */,
+			);
+			name = covtracesymbolicator;
+			packageProductDependencies = (
+			);
+			productName = covtracesymbolicator;
+			productReference = C5CF5A622FDB926600A0495F /* covtracesymbolicator */;
+			productType = "com.apple.product-type.tool";
+		};
+		C5CF5A812FDB95E000A0495F /* CoreSymbolicationDT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5CF5A872FDB95E000A0495F /* Build configuration list for PBXNativeTarget "CoreSymbolicationDT" */;
+			buildPhases = (
+				C5CF5A8A2FDB95F600A0495F /* Copy Xcode Core Symbolicator framework to build output */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreSymbolicationDT;
+			packageProductDependencies = (
+			);
+			productName = CoreSymbolicationDT;
+			productReference = C5CF5A822FDB95E000A0495F /* CoreSymbolicationDT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5CF5A292FDA532200A0495F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					C5CF5A552FDA550900A0495F = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					C5CF5A612FDB926600A0495F = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+					C5CF5A812FDB95E000A0495F = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C5CF5A2C2FDA532200A0495F /* Build configuration list for PBXProject "CovTrace" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5CF5A282FDA532200A0495F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C5CF5A322FDA532200A0495F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5CF5A552FDA550900A0495F /* CovTrace */,
+				C5CF5A612FDB926600A0495F /* covtracesymbolicator */,
+				C5CF5A812FDB95E000A0495F /* CoreSymbolicationDT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5CF5A8A2FDB95F600A0495F /* Copy Xcode Core Symbolicator framework to build output */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CovTrace/script/copy_core_symbolication_framework.sh",
+			);
+			name = "Copy Xcode Core Symbolicator framework to build output";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SCRIPT_INPUT_FILE_0}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5CF5A532FDA550900A0495F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5CF5A5E2FDB926600A0495F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5CF5A8C2FDB980D00A0495F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5CF5A812FDB95E000A0495F /* CoreSymbolicationDT */;
+			targetProxy = C5CF5A8B2FDB980D00A0495F /* PBXContainerItemProxy */;
+		};
+		C5CF5A912FDB993900A0495F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5CF5A812FDB95E000A0495F /* CoreSymbolicationDT */;
+			targetProxy = C5CF5A902FDB993900A0495F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C5CF5A332FDA532200A0495F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C5CF5A342FDA532200A0495F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C5CF5A582FDA550900A0495F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.4;
+				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Debug;
+		};
+		C5CF5A592FDA550900A0495F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.4;
+				EXECUTABLE_PREFIX = lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Release;
+		};
+		C5CF5A672FDB926600A0495F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				LD_RUNPATH_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5CF5A682FDB926600A0495F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}";
+				LD_RUNPATH_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C5CF5A882FDB95E000A0495F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haojunsui.CoreSymbolicationDT;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C5CF5A892FDB95E000A0495F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.haojunsui.CoreSymbolicationDT;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5CF5A2C2FDA532200A0495F /* Build configuration list for PBXProject "CovTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CF5A332FDA532200A0495F /* Debug */,
+				C5CF5A342FDA532200A0495F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CF5A572FDA550900A0495F /* Build configuration list for PBXNativeTarget "CovTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CF5A582FDA550900A0495F /* Debug */,
+				C5CF5A592FDA550900A0495F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CF5A662FDB926600A0495F /* Build configuration list for PBXNativeTarget "covtracesymbolicator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CF5A672FDB926600A0495F /* Debug */,
+				C5CF5A682FDB926600A0495F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5CF5A872FDB95E000A0495F /* Build configuration list for PBXNativeTarget "CoreSymbolicationDT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5CF5A882FDB95E000A0495F /* Debug */,
+				C5CF5A892FDB95E000A0495F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5CF5A292FDA532200A0495F /* Project object */;
+}
